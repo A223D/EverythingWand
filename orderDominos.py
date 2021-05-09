@@ -1,7 +1,7 @@
 from pizzapi import *
 
-customer = Customer('Chirag', 'Sethi', 'chiragsethi16@gmail.com', '6476151627')
-address = Address('Apt 407-A, 253 College Street', 'Toronto', 'Ontario', 'M5T1R5')
+customer = Customer('Chirag', 'Sethi', 'chiragEmail@gmail.com', '1234567890')
+address = Address('My Adress', 'Toronto', 'Ontario', 'M5G1R1')
 store = address.closest_store()
 order = Order(store, customer, address)
 
@@ -28,7 +28,6 @@ elif attribute == 3:
     order.add_item('GARBUTTER') #roasted garlic dip
     order.add_item('GARBUTTER') #roasted garlic dip
     order.add_item('10SCVEGGIE') #10" Hand Tossed Veggie
-
-#card = PaymentObject('4100123422343234', '0115', '777', '90210')
-order.pay_with() #only for testing. won't order
+    
+order.place() #Place order
 print("Order placed")
