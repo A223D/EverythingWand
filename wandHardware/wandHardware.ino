@@ -20,10 +20,10 @@ Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);
 
 int gateVal = 0;
 
-const char* ssid     = "TestArduino";
-const char* password = "abcdefghi";
+const char* ssid     = "MySSID";
+const char* password = "MyPass";
 #define FIREBASE_HOST "https://everythingwand-default-rtdb.firebaseio.com/"
-#define FIREBASE_AUTH "CV2k6Amuz1QdnclSfl06yGWc3IlA4Q35AV4soEuV"
+#define FIREBASE_AUTH "MyAuth"
 static bool hasWifi = false;
 
 
