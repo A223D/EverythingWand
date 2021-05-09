@@ -49,7 +49,7 @@ Using the Linode credit from MLH, we were able to provision a cloud computer to 
 ### 3. Local Software
 Since opening Netflix and controlling our speaker is a local task, we have a local python script running listening to the Firebase "Command" data field as well, just like the cloud script. It controls the Netflix capability and speaker. Here is how that works:
 * Netflix **(activated when Command field is 3)**
-  * Any 3 movies or shows or shows can be programmed into the "links.txt" file [See GitHub](GIT LINK). Which movie is selected is based what button is pressed after the Netflix button(Netflix button updates "Command" field and subsequent button updates "Attribute" field.
+  * Any 3 movies or shows or shows can be programmed into the "links.txt" file [(See GitHub)](https://github.com/A223D/EverythingWand) . Which movie is selected is based what button is pressed after the Netflix button(Netflix button updates "Command" field and subsequent button updates "Attribute" field.
   * The local python script checks the "Attribute" field in Firebase to determine which movie to open after it senses that "Command" is equal to 3(which means that the wand user selected Netflix)
   * It uses the webbrowser python module to open a direct Netflix link to the requested show and it starts playing. 
 * WiFi Speaker Control **(activated then Command field is 2)**
@@ -64,7 +64,7 @@ Since opening Netflix and controlling our speaker is a local task, we have a loc
 * It was also our first time using Twilio. However, we were able to get it working quickly. 
 
 ## Accomplishments that we're proud of
-* Ordering food using hardware was an accomplishment we were especially proud. **Proof:**
+* Ordering food using hardware was an accomplishment we were especially proud of. **Proof:**
 ![Bill](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/506/161/datas/original.png)
 
 
@@ -73,9 +73,11 @@ Since opening Netflix and controlling our speaker is a local task, we have a loc
 
 ## What we learned
 * How to provision a machine in the cloud using Linode.
+  * Using SSH to use and configure our cloud machine.
 * How Firebase data streaming works on a hardware level. 
 * Using Twilio to text phone numbers
 
 ## What's next for EverythingWand
 * Adding more food delivery services. 
-* 
+* Adding the ability to customize texts and recipients.
+* Adding more button and functions to the wand(such as the ability to switch on and off home lights)
