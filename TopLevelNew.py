@@ -16,7 +16,7 @@ print(speaker)
 print("Discovered Sonos")
 speaker.get_current_track_info()
 config = {
-  "apiKey": "CV2k6Amuz1QdnclSfl06yGWc3IlA4Q35AV4soEuV",
+  "apiKey": "MyAUTH",
   "authDomain": "projectId.firebaseapp.com",
   "databaseURL": "https://everythingwand-default-rtdb.firebaseio.com/",
   "storageBucket": "projectId.appspot.com",
